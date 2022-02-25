@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <parameter name="browser" value ="chrome"></parameter>
+  <parameter name="name" value="Date"></parameter>
+  <parameter name="name" value="To"></parameter>
+  <parameter name="name" value="From"></parameter>
+  <test thread-count="5" name="SeachTest">
+  <parameter name="testname" value="Red Bus Test"></parameter>
+  <!-- groups>
+ 	 <run>
+  	<include name="SearchTest"></include>
+ 	 </run>
+  </groups> -->
+  <classes>
+  	<class name="com.testng.SearchTest"/>
+  	</classes>
+	<!--<class name ="com.testng.SecondTestNGClass"/>-->
+	</test>
+	<test name= "Red Bus Test">
+	<classes>
+	<class name="com.report.extentReport"></class>
+	</classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
